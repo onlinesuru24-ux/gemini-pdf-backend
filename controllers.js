@@ -2,7 +2,7 @@ const { PDFDocument } = require('pdf-lib');
 const fs = require('fs').promises;
 const path = require('path');
 const Tesseract = require('tesseract.js');
-const { GoogleGenAI } = require('@google/genai');
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // --- Helper: Cleanup uploaded files ---
 const cleanupFiles = async (files) => {
